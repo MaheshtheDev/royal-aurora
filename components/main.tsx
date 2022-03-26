@@ -10,15 +10,15 @@ const Main: NextPage = () => {
             </div>
             <img src="/onlineshop.svg" className="pr-10 md:w-fit w-64"/>
         </div>
-        <div className="mt-10">
-            <p className="uppercase md:text-xl text-lg font-semibold mb-5 pl-5">Products</p>
+        <div id="products" className="mt-10">
+            <p className="uppercase md:text-xl text-lg font-semibold mb-5 pl-5">Product</p>
             <div className="flex flex-grow justify-around">
-                <ProductCard productDetails={{name: "PureX", description: "Hand Wash", price: 1000} as Product}/>
-                <ProductCard productDetails={{name: "Winclean", description: "Dish Washer", price: 1000} as Product}/>
-                <ProductCard productDetails={{name: "Aromatic+", description: "Detergent liquid", price: 1000} as Product}/>
-                <ProductCard productDetails={{name: "Flash", description: "Floor cleaner gel", price: 1000} as Product}/>
+                {/*<ProductCard productDetails={{name: "PureX", description: "Hand Wash", price: 1000, isHidden: true} as Product}/>*/}
+                {/*<ProductCard productDetails={{name: "Winclean", description: "Dish Washer", price: 1000, isHidden: true} as Product}/>*/}
+                <ProductCard productDetails={{name: "Aromatic+", description: "Detergent liquid", price: 225} as Product}/>
+                {/*<ProductCard productDetails={{name: "Flash", description: "Floor cleaner gel", price: 1000, isHidden: true} as Product}/>*/}
             </div>
-            <div className="flex flex-grow justify-around pt-10">
+            <div className="hidden flex-grow justify-around pt-10">
                 <ProductCard productDetails={{name: "CB Cover", description: "Brass, copper metal cleaner", price: 1000} as Product}/>
                 <ProductCard productDetails={{name: "Magic pro clean", description: "Toilet cleaner", price: 1000} as Product}/>
                 <ProductCard productDetails={{name: "Magic Acid", description: "Acid", price: 1000} as Product}/>
