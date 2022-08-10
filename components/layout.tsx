@@ -31,9 +31,8 @@ const Layout: NextPage = () => {
    ];
 
    return (
-     <div>
        <header className="p-5 flex justify-between font-Montserrat">
-            <Image src="/logo.jpeg" height={75} width={150}/>
+            <Image src="/logo.jpeg" height={50} width={125}/>
          <nav className="md:hidden">
            {show ? (
              <Image
@@ -86,7 +85,6 @@ const Layout: NextPage = () => {
            </a>
          </nav>
        </header>
-     </div>
    );
 }
 

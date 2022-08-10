@@ -6,15 +6,15 @@ import Main from '../components/main'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="min-h-screen relative flex justify-between flex-col">
       <Head>
         <title>ROYALAURORA</title>
       </Head>
       <Layout />
       <Main />
-      <Footer />  
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default Home
