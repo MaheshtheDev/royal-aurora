@@ -33,7 +33,8 @@ const Layout: NextPage = () => {
    return (
        <header className="p-5 flex justify-between font-Montserrat">
             <Image src="/logo.jpeg" height={50} width={125}/>
-         <nav className="md:hidden">
+         <nav className="md:hidden flex">
+          <img src="/order-now.svg" alt="" height={50} width={50} className="mr-5"/>
            {show ? (
              <Image
                src={"/close_big.svg"}

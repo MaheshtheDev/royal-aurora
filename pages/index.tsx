@@ -9,6 +9,11 @@ const Home: NextPage = () => {
     <div className="min-h-screen relative flex justify-between flex-col">
       <Head>
         <title>ROYALAURORA</title>
+        <link rel="icon" href="/logo.png" />
+        <meta
+          name="description"
+          content="Automating Non-Creative Jobs w/ webtools"
+        />
       </Head>
       <Layout />
       <Main />
