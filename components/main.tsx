@@ -1,31 +1,129 @@
 import { NextPage } from "next";
+import Image from "next/image";
+
 import { Product } from "../types/product";
 import ProductCard from "./product-card";
 
 const Main: NextPage = () => {
-    return <main className="font-Montserrat px-5">
-        <div className="flex justify-between">
-            <div className=" pl-5 text-2xl md:text-4xl md:pb-5 md:pl-20 md:pt-8">
-                Building <div className="font-extrabold uppercase text-[#474BBA]">Futuristic</div> Products
+  return (
+    <main className="font-Montserrat mb-auto">
+      <section className="flex flex-col justify-between h-32">
+        <h2 className="text-center uppercase font-semibold pt-5">
+          Everything you need to maintain a great home..
+        </h2>
+        <a
+          href="https://wa.me/+919505063030"
+          className="bg-slate-500 text-white px-2 rounded-full mx-auto"
+        >
+          <button>Order Now</button>
+        </a>
+      </section>
+      <div id="products" className="mt-10">
+        <p className="uppercase text-lg font-semibold flex justify-center py-2 bg-[#B8D0EA]">
+          Products
+        </p>
+        <section className="">
+          <h2 className="flex justify-center text-xl py-2 text-[#22519F] font-semibold">
+            Aro Matic +
+          </h2>
+          <div className="bg-[#73A2D6]/50 p-5">
+            <div className="image-column">
+              <Image
+                src="/products/comparsion.svg"
+                alt="comparsion"
+                height={113}
+                width={200}
+              />
             </div>
-            <img src="/onlineshop.svg" className="pr-10 md:w-fit w-64"/>
+            <p className="text-xs">
+              ARO MATIC+ is a product with 10x concentration & works on both top
+              load and front load washing machines & is gentle for skin &
+              clothes and added fabric conditioner with long lasting fragrance.
+            </p>
+            <div className="flex">
+              <Image
+                src={"/washing-mach.svg"}
+                alt="washing machin"
+                height={86}
+                width={126}
+              />
+              <div className="p-4">
+                <a
+                  href="https://wa.me/+919505063030"
+                  className=" bg-white px-2 rounded-full"
+                >
+                  <button>Order Now</button>
+                </a>
+                <div className="w-1/4 pt-1 flex justify-between">
+                  <a href="https://wa.me/+919505063030">
+                    <Image
+                      src="/sm/whatsapp.svg"
+                      height={15}
+                      width={15}
+                      className="py-2"
+                    />
+                  </a>
+                  <a href="https://wa.me/+919505063030">
+                    <Image
+                      src="/sm/instagram.svg"
+                      height={15}
+                      width={15}
+                      className="py-2"
+                    />
+                  </a>
+                  <a href="https://wa.me/+919505063030">
+                    <Image src="/sm/facebook.svg" height={15} width={15} />
+                  </a>
+                </div>
+                <p className="text-xs text-[#000000]/40">
+                  Share the Product with your family and friends
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="flex flex-grow justify-around"></div>
+        <div className="hidden flex-grow justify-around pt-10">
+          <ProductCard
+            productDetails={
+              {
+                name: "CB Cover",
+                description: "Brass, copper metal cleaner",
+                price: 1000,
+              } as Product
+            }
+          />
+          <ProductCard
+            productDetails={
+              {
+                name: "Magic pro clean",
+                description: "Toilet cleaner",
+                price: 1000,
+              } as Product
+            }
+          />
+          <ProductCard
+            productDetails={
+              {
+                name: "Magic Acid",
+                description: "Acid",
+                price: 1000,
+              } as Product
+            }
+          />
+          <ProductCard
+            productDetails={
+              {
+                name: "Magic perfumes phenyl",
+                description: "Phenyl",
+                price: 1000,
+              } as Product
+            }
+          />
         </div>
-        <div id="products" className="mt-10">
-            <p className="uppercase md:text-xl text-lg font-semibold mb-5 pl-5">Product</p>
-            <div className="flex flex-grow justify-around">
-                {/*<ProductCard productDetails={{name: "PureX", description: "Hand Wash", price: 1000, isHidden: true} as Product}/>*/}
-                {/*<ProductCard productDetails={{name: "Winclean", description: "Dish Washer", price: 1000, isHidden: true} as Product}/>*/}
-                <ProductCard productDetails={{name: "Aromatic+", description: "Detergent liquid", price: 225} as Product}/>
-                {/*<ProductCard productDetails={{name: "Flash", description: "Floor cleaner gel", price: 1000, isHidden: true} as Product}/>*/}
-            </div>
-            <div className="hidden flex-grow justify-around pt-10">
-                <ProductCard productDetails={{name: "CB Cover", description: "Brass, copper metal cleaner", price: 1000} as Product}/>
-                <ProductCard productDetails={{name: "Magic pro clean", description: "Toilet cleaner", price: 1000} as Product}/>
-                <ProductCard productDetails={{name: "Magic Acid", description: "Acid", price: 1000} as Product}/>
-                <ProductCard productDetails={{name: "Magic perfumes phenyl", description: "Phenyl", price: 1000} as Product}/>
-            </div>
-        </div>
+      </div>
     </main>
-}
+  );
+};
 
 export default Main;

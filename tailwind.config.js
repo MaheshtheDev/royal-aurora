@@ -5,10 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily : {
-        Montserrat: ["Montserrat", "sans-serif"]
-      }
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+      },
+      colors: {
+        primary: "#335DA7",
+        secondary: "#A1B6EE",
+      },
     },
   },
   plugins: [],
-}
+};
