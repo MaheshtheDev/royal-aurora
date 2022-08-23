@@ -12,7 +12,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.png" />
         <meta
           name="description"
-          content="Automating Non-Creative Jobs w/ webtools"
+          content="We provide a wide range of house cleaning products such as detergent liquid, dishwash gel, floor cleaners, bathroom cleaners, glass cleaners."
+        />
+
+        <meta
+          property="og:image"
+          content="https://www.royalaurora.com/OG-Image.png"
         />
       </Head>
       <Layout />
