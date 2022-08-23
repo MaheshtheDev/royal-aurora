@@ -11,9 +11,12 @@ const Main: NextPage = () => {
         <h2 className="text-center uppercase font-semibold pt-5">
           Everything you need to maintain a great home..
         </h2>
-        <button className="bg-slate-500 text-white px-2 rounded-full mx-auto">
-          Order Now
-        </button>
+        <a
+          href="https://wa.me/+919505063030"
+          className="bg-slate-500 text-white px-2 rounded-full mx-auto"
+        >
+          <button>Order Now</button>
+        </a>
       </section>
       <div id="products" className="mt-10">
         <p className="uppercase text-lg font-semibold flex justify-center py-2 bg-[#B8D0EA]">
@@ -45,10 +48,13 @@ const Main: NextPage = () => {
                 width={126}
               />
               <div className="p-4">
-                <button className=" bg-white px-2 rounded-full">
-                  Order Now
-                </button>
-                <div className="w-1/4 py-2 flex justify-between">
+                <a
+                  href="https://wa.me/+919505063030"
+                  className=" bg-white px-2 rounded-full"
+                >
+                  <button>Order Now</button>
+                </a>
+                <div className="w-1/4 pt-1 flex justify-between">
                   <a href="https://wa.me/+919505063030">
                     <Image
                       src="/sm/whatsapp.svg"
@@ -57,13 +63,17 @@ const Main: NextPage = () => {
                       className="py-2"
                     />
                   </a>
-                  <Image
-                    src="/sm/instagram.svg"
-                    height={15}
-                    width={15}
-                    className="py-2"
-                  />
-                  <Image src="/sm/facebook.svg" height={15} width={15} />
+                  <a href="https://wa.me/+919505063030">
+                    <Image
+                      src="/sm/instagram.svg"
+                      height={15}
+                      width={15}
+                      className="py-2"
+                    />
+                  </a>
+                  <a href="https://wa.me/+919505063030">
+                    <Image src="/sm/facebook.svg" height={15} width={15} />
+                  </a>
                 </div>
                 <p className="text-xs text-[#000000]/40">
                   Share the Product with your family and friends
