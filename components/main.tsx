@@ -83,45 +83,19 @@ const Main: NextPage = () => {
           </div>
         </section>
         <div className="flex flex-grow justify-around"></div>
-        <div className="hidden flex-grow justify-around pt-10">
-          <ProductCard
-            productDetails={
-              {
-                name: "CB Cover",
-                description: "Brass, copper metal cleaner",
-                price: 1000,
-              } as Product
-            }
-          />
-          <ProductCard
-            productDetails={
-              {
-                name: "Magic pro clean",
-                description: "Toilet cleaner",
-                price: 1000,
-              } as Product
-            }
-          />
-          <ProductCard
-            productDetails={
-              {
-                name: "Magic Acid",
-                description: "Acid",
-                price: 1000,
-              } as Product
-            }
-          />
-          <ProductCard
-            productDetails={
-              {
-                name: "Magic perfumes phenyl",
-                description: "Phenyl",
-                price: 1000,
-              } as Product
-            }
-          />
-        </div>
       </div>
+      <section className="p-2">
+        <h2 className="uppercase font-semibold">
+          For what application you are looking for the product ??
+        </h2>
+        <div className="flex flex-col justify-center text-center">
+          <Image src="/products/Laundry.svg" height={190} width={200}></Image>
+          <p className="text-lg font-medium">Laundry</p>
+        </div>
+      </section>
+      <section className="h-fit">
+        <Image src={"/certificates.svg"} height={40} width={100} layout="responsive" className="w-full"></Image>
+      </section>
     </main>
   );
 };
