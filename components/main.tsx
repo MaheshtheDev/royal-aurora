@@ -27,58 +27,61 @@ const Main: NextPage = () => {
             Aro Matic +
           </h2>
           <div className="bg-[#73A2D6]/50 p-5">
-            <div className="image-column">
-              <Image
-                src="/products/comparsion.svg"
-                alt="comparsion"
-                height={113}
-                width={200}
-              />
-            </div>
-            <p className="text-xs">
-              ARO MATIC+ is a product with 10x concentration & works on both top
-              load and front load washing machines & is gentle for skin &
-              clothes and added fabric conditioner with long lasting fragrance.
-            </p>
             <div className="flex">
-              <Image
+              <div className="image-column">
+                <Image
+                  src="/products/aroMatic+.png"
+                  alt="AroMatic+"
+                  height={300}
+                  width={120}
+                />
+              </div>
+              <div className="pl-10 flex flex-col justify-between">
+                <p className="text-base">
+                  ARO MATIC+ is a product with 10x concentration & works on both
+                  top load.
+                </p>
+                <a
+                  href="https://wa.me/+919505063030"
+                  className=" bg-white px-2 my-4 rounded-full w-fit"
+                >
+                  <button>Order Now</button>
+                </a>
+                <div className="">
+                  <div className="w-1/4 pt-1 flex justify-between">
+                    <a href="https://wa.me/+919505063030">
+                      <Image
+                        src="/sm/whatsapp.svg"
+                        height={15}
+                        width={15}
+                        className="py-1"
+                      />
+                    </a>
+                    <a href="https://wa.me/+919505063030">
+                      <Image
+                        src="/sm/instagram.svg"
+                        height={15}
+                        width={15}
+                        className="py-1"
+                      />
+                    </a>
+                    <a href="https://wa.me/+919505063030">
+                      <Image src="/sm/facebook.svg" height={15} width={15} />
+                    </a>
+                  </div>
+                  <p className="text-xs text-[#000000]/40">
+                    Share the Product with your family and friends
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex">
+              {/*<Image
                 src={"/washing-mach.svg"}
                 alt="washing machin"
                 height={86}
                 width={126}
-              />
-              <div className="p-4">
-                <a
-                  href="https://wa.me/+919505063030"
-                  className=" bg-white px-2 rounded-full"
-                >
-                  <button>Order Now</button>
-                </a>
-                <div className="w-1/4 pt-1 flex justify-between">
-                  <a href="https://wa.me/+919505063030">
-                    <Image
-                      src="/sm/whatsapp.svg"
-                      height={15}
-                      width={15}
-                      className="py-2"
-                    />
-                  </a>
-                  <a href="https://wa.me/+919505063030">
-                    <Image
-                      src="/sm/instagram.svg"
-                      height={15}
-                      width={15}
-                      className="py-2"
-                    />
-                  </a>
-                  <a href="https://wa.me/+919505063030">
-                    <Image src="/sm/facebook.svg" height={15} width={15} />
-                  </a>
-                </div>
-                <p className="text-xs text-[#000000]/40">
-                  Share the Product with your family and friends
-                </p>
-              </div>
+              />*/}
             </div>
           </div>
         </section>
@@ -94,7 +97,13 @@ const Main: NextPage = () => {
         </div>
       </section>
       <section className="h-fit">
-        <Image src={"/certificates.svg"} height={40} width={100} layout="responsive" className="w-full"></Image>
+        <Image
+          src={"/certificates.svg"}
+          height={40}
+          width={100}
+          layout="responsive"
+          className="w-full"
+        ></Image>
       </section>
     </main>
   );
