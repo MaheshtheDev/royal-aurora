@@ -4,14 +4,50 @@ import Image from "next/image";
 import Slider from "react-slick";
 
 
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#335DA7",
+        borderRadius: "16px",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#335DA7",
+        borderRadius: "16px",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+
 const Main: NextPage = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
+    arrows: true,
     slidesToShow: 1,
     swipeToSlide: true,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
@@ -31,8 +67,8 @@ const Main: NextPage = () => {
         <p className="uppercase text-lg font-semibold flex justify-center py-2 bg-[#B8D0EA]">
           Products
         </p>
-        <Slider {...settings}>
-          <div className="scroll-ml-6 snap-start">
+        <Slider {...settings} className="mx-7">
+          <section className="">
             <h2 className="flex justify-center text-xl py-2 text-[#22519F] font-semibold">
               Aro Matic +
             </h2>
@@ -86,8 +122,8 @@ const Main: NextPage = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="scroll-ml-6 snap-start">
+          </section>
+          <section className="">
             <h2 className="flex justify-center text-xl py-2 text-[#22519F] font-semibold">
               <Image
                 src="/products/cibi-logo.png"
@@ -146,7 +182,7 @@ const Main: NextPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </Slider>
         <div className="snap-x flex overflow-x-auto snap-start"></div>
         <div className="flex flex-grow justify-around"></div>
