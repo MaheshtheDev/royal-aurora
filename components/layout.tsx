@@ -1,8 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-
 
 const Layout: NextPage = () => {
    const [show, setShow] = useState(false);
@@ -20,10 +18,10 @@ const Layout: NextPage = () => {
        title: "Products",
        href: "#products",
      },
-     {
-       title: "About us",
-       href: "#",
-     },
+    // {
+    //   title: "About us",
+    //   href: "#",
+    // },
      {
        title: "Contact us",
        href: "#footer",
@@ -68,6 +66,7 @@ const Layout: NextPage = () => {
                  <a
                    key={index}
                    href={item.href}
+                   onClick={() => handleShow()}
                    className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
                  >
                    {item.title}

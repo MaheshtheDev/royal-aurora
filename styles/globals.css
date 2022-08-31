@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* stylelint-disable-next-line CssSyntaxError */
+/*import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";*/
+
 /*/*
 html,
 body {
