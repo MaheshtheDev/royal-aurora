@@ -102,9 +102,9 @@ const Main: NextPage = () => {
                     ARO MATIC+ is a product with 10x concentration & with added
                     fabric conditioner.
                   </p>
-                  <div className="flex-auto flex space-x-2 py-4 text-sm">
+                  <div className="flex-auto flex flex-wrap py-4 text-sm">
                     <button
-                      className="h-8 px-2 font-medium rounded-md bg-[#283562] text-white"
+                      className="h-8 px-2 mr-2 mb-2 font-medium rounded-md bg-[#283562] text-white"
                       type="button"
                       onClick={() => window.open("https://wa.me/+919505063030")}
                     >
@@ -118,7 +118,7 @@ const Main: NextPage = () => {
                     </button>
                   </div>
                   <div className="">
-                    <div className="w-1/4 pt-1 flex justify-between">
+                    <div className="w-16 pt-1 flex justify-between">
                       <a href="https://wa.me/+919505063030">
                         <Image
                           src="/sm/whatsapp.svg"
@@ -174,23 +174,23 @@ const Main: NextPage = () => {
                     Cibi Product is a Copper &amp; Brass metal cleaner with 10x
                     more cleaning power.
                   </p>
-                  <div className="flex-auto flex space-x-2 py-4 text-sm">
+                  <div className="flex-auto flex py-4 flex-wrap text-sm">
                     <button
-                      className="h-8 px-2 font-medium rounded-md bg-[#50000D]/80 text-white"
+                      className="h-8 w-fit px-2 mr-2 mb-2 font-medium rounded-md bg-[#50000D]/80 text-white"
                       type="button"
                       onClick={() => window.open("https://wa.me/+919505063030")}
                     >
                       Order Now
                     </button>
                     <button
-                      className="h-8 px-2 font-medium rounded-md border border-[#50000D]/80 text-[#50000D]/80"
+                      className="h-8 w-fit px-2 font-medium rounded-md border border-[#50000D]/80 text-[#50000D]/80"
                       type="button"
                     >
                       View Product
                     </button>
                   </div>
                   <div className="">
-                    <div className="w-1/4 flex justify-between">
+                    <div className="w-16 flex justify-between">
                       <a href="https://wa.me/+919505063030">
                         <Image
                           src="/sm/whatsapp.svg"
