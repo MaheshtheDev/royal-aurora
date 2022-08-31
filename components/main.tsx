@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import Slider from "react-slick";
 
-
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
@@ -36,7 +35,6 @@ function SamplePrevArrow(props: any) {
   );
 }
 
-
 const Main: NextPage = () => {
   var settings = {
     dots: true,
@@ -50,11 +48,23 @@ const Main: NextPage = () => {
     prevArrow: <SamplePrevArrow />,
   };
 
+  var whatSettings = {
+    dots: true,
+    infinite: true,
+    speed: 10,
+    arrows: true,
+    slidesToShow: 1,
+    swipeToSlide: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+  };
+
   return (
     <main className="font-Montserrat mb-auto">
       <section className="flex flex-col justify-between h-32">
         <h2 className="text-center uppercase font-semibold pt-5">
-          Everything you need to maintain a great home..
+          Everything you need to maintain <br></br> a great home..
         </h2>
         <a
           href="https://wa.me/+919505063030"
@@ -70,10 +80,15 @@ const Main: NextPage = () => {
         <Slider {...settings} className="mx-7">
           <section className="">
             <h2 className="flex justify-center text-xl py-2 text-[#22519F] font-semibold">
-              Aro Matic +
+              <Image
+                src="/products/logo.png"
+                alt="AroMatic+"
+                height={60}
+                width={80}
+              />
             </h2>
-            <div className="bg-[#73A2D6]/50 p-5">
-              <div className="flex">
+            <div className="bg-[#73A2D6]/50 px-3 py-2">
+              <div className="flex py-2">
                 <div className="image-column">
                   <Image
                     src="/products/aroMatic+.png"
@@ -82,17 +97,26 @@ const Main: NextPage = () => {
                     width={120}
                   />
                 </div>
-                <div className="pl-10 flex flex-col justify-between">
-                  <p className="text-base">
-                    ARO MATIC+ is a product with 10x concentration & works on
-                    both top load.
+                <div className="pl-5 flex flex-col justify-between">
+                  <p className="text-xs">
+                    ARO MATIC+ is a product with 10x concentration & with added
+                    fabric conditioner.
                   </p>
-                  <a
-                    href="https://wa.me/+919505063030"
-                    className=" bg-white px-2 my-4 rounded-full w-fit"
-                  >
-                    <button>Order Now</button>
-                  </a>
+                  <div className="flex-auto flex space-x-2 py-4 text-sm">
+                    <button
+                      className="h-8 px-2 font-medium rounded-md bg-[#283562] text-white"
+                      type="button"
+                      onClick={() => window.open("https://wa.me/+919505063030")}
+                    >
+                      Order Now
+                    </button>
+                    <button
+                      className="h-8 px-2 font-medium rounded-md border border-[#283562] text-[#283562]"
+                      type="button"
+                    >
+                      View Product
+                    </button>
+                  </div>
                   <div className="">
                     <div className="w-1/4 pt-1 flex justify-between">
                       <a href="https://wa.me/+919505063030">
@@ -103,7 +127,10 @@ const Main: NextPage = () => {
                           className="py-1"
                         />
                       </a>
-                      <a href="https://wa.me/+919505063030">
+                      <a
+                        href="https://instagram.com/royalaurora_official"
+                        target={"blank"}
+                      >
                         <Image
                           src="/sm/instagram.svg"
                           height={15}
@@ -128,33 +155,42 @@ const Main: NextPage = () => {
               <Image
                 src="/products/cibi-logo.png"
                 alt="AroMatic+"
-                height={27}
-                width={60}
+                height={60}
+                width={130}
               />
             </h2>
-            <div className="bg-[#73A2D6]/50 p-5">
-              <div className="flex">
+            <div className="bg-[#FCCEE2]/50 px-3 py-2">
+              <div className="flex py-2">
                 <div className="image-column">
                   <Image
-                    src="/products/image.png"
-                    alt="AroMatic+"
-                    height={300}
-                    width={250}
+                    src="/products/cibi.png"
+                    alt="Cibi"
+                    height={320}
+                    width={175}
                   />
                 </div>
-                <div className="pl-10 flex flex-col justify-between">
-                  <p className="text-base">
-                    Cibi Product is a Finest Ingredients For Your Precious
-                    Metals.
+                <div className="pl-5 flex flex-col justify-between">
+                  <p className="text-xs">
+                    Cibi Product is a Copper &amp; Brass metal cleaner with 10x
+                    more cleaning power.
                   </p>
-                  <a
-                    href="https://wa.me/+919505063030"
-                    className=" bg-white px-2 my-4 rounded-full w-fit"
-                  >
-                    <button>Order Now</button>
-                  </a>
+                  <div className="flex-auto flex space-x-2 py-4 text-sm">
+                    <button
+                      className="h-8 px-2 font-medium rounded-md bg-[#50000D]/80 text-white"
+                      type="button"
+                      onClick={() => window.open("https://wa.me/+919505063030")}
+                    >
+                      Order Now
+                    </button>
+                    <button
+                      className="h-8 px-2 font-medium rounded-md border border-[#50000D]/80 text-[#50000D]/80"
+                      type="button"
+                    >
+                      View Product
+                    </button>
+                  </div>
                   <div className="">
-                    <div className="w-1/4 pt-1 flex justify-between">
+                    <div className="w-1/4 flex justify-between">
                       <a href="https://wa.me/+919505063030">
                         <Image
                           src="/sm/whatsapp.svg"
@@ -163,7 +199,10 @@ const Main: NextPage = () => {
                           className="py-1"
                         />
                       </a>
-                      <a href="https://wa.me/+919505063030">
+                      <a
+                        href="https://instagram.com/royalaurora_official"
+                        target={"blank"}
+                      >
                         <Image
                           src="/sm/instagram.svg"
                           height={15}
@@ -187,16 +226,22 @@ const Main: NextPage = () => {
         <div className="snap-x flex overflow-x-auto snap-start"></div>
         <div className="flex flex-grow justify-around"></div>
       </div>
-      <section className="p-2">
+      <section className="p-2 h-fit">
         <h2 className="uppercase font-semibold">
-          For what application you are looking for the product ??
+          For what application you are looking for the product??
         </h2>
-        <div className="flex flex-col justify-center text-center">
-          <Image src="/products/Laundry.svg" height={190} width={200}></Image>
-          <p className="text-lg font-medium">Laundry</p>
-        </div>
+        <Slider {...whatSettings} className="mx-7">
+          <div className="flex flex-col justify-center text-center">
+            <Image src="/products/Laundry.svg" height={190} width={200}></Image>
+            <p className="text-lg font-medium">Laundry</p>
+          </div>
+          <div className="flex flex-col justify-center text-center py-3">
+            <Image src="/products/image.png" height={190} width={200}></Image>
+            <p className="text-lg font-medium">Brass, Copper Vessels</p>
+          </div>
+        </Slider>
       </section>
-      <section className="h-fit">
+      {/*<section className=" mx-2">
         <Image
           src={"/certificates.svg"}
           height={40}
@@ -204,7 +249,7 @@ const Main: NextPage = () => {
           layout="responsive"
           className="w-full"
         ></Image>
-      </section>
+      </section>*/}
     </main>
   );
 };
