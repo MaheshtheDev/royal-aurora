@@ -163,7 +163,7 @@ const Main: NextPage = () => {
               <div className="flex py-2">
                 <div className="image-column">
                   <Image
-                    src="/products/cibi.png"
+                    src="/products/CIBI.png"
                     alt="Cibi"
                     height={320}
                     width={175}
