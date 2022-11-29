@@ -6,7 +6,7 @@ import Main from '../components/main'
 
 const Home: NextPage = () => {
   return (
-    <div className="min-h-screen relative flex justify-between flex-col">
+    <div className="min-h-screen relative flex justify-between flex-col bg-[#5193cf]">
       <link
         rel="stylesheet"
         type="text/css"

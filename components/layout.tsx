@@ -29,8 +29,10 @@ const Layout: NextPage = () => {
    ];
 
    return (
-     <header className="p-5 flex justify-between font-Montserrat">
-       <Image src="/logoA.png" height={50} width={110} />
+     <header className="p-3 flex justify-between overflow-visible font-Montserrat bg-[#5193cf]">
+       <div className="">
+         <img src="/logoA.png" height={50} width={110} className="" />
+       </div>
        <nav className="md:hidden flex">
          <img
            src="/order-now.svg"
@@ -38,6 +40,7 @@ const Layout: NextPage = () => {
            height={50}
            width={50}
            className="mr-5"
+           onClick={() => window.open("https://wa.me/+919505063030")}
          />
          {show ? (
            <Image
