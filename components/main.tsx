@@ -252,7 +252,7 @@ const Main: NextPage = () => {
         </Slider>
       </section>
       <section className="bg-[#5193CF] text-white p-10 text-xl">
-        <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let's keep<br></br>in touch</div>
+        <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let&apos;s keep<br></br>in touch</div>
           <div className="pb-8">
             <a href="https://wa.me/+919505063030">
               <Image

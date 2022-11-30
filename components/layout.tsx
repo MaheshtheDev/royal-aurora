@@ -30,7 +30,7 @@ const Layout: NextPage = () => {
 
    return (
      <header className="p-5 flex justify-between font-Montserrat">
-       <Image src="/logoA.png" height={50} width={110} />
+       <Image src="/logoA.png" alt="1stlogo" height={50} width={110} />
        <nav className="md:hidden flex">
          <img
            src="/order-now.svg"
