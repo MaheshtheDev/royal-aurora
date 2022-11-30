@@ -67,7 +67,7 @@ const Layout: NextPage = () => {
                    key={index}
                    href={item.href}
                    onClick={() => handleShow()}
-                   className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
+                   className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-bold hover:tracking-wide"
                  >
                    {item.title}
                  </a>
@@ -77,16 +77,16 @@ const Layout: NextPage = () => {
          )}
        </nav>
        <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex">
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
            Home
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
            Products
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
            About Us
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
            Contact us
          </a>
        </nav>

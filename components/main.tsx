@@ -61,20 +61,30 @@ const Main: NextPage = () => {
   };
 
   return (
-    <main className="font-Montserrat mb-auto">
+    <main>
       <section className="flex flex-col justify-between h-32">
-        <h2 className="text-center uppercase font-semibold pt-5">
-          Everything you need to maintain <br></br> a great home..
+      <div className="w-full h-400 bg-blue-200">
+      <h2 className="flex text-xl py-8 float-right text-[#22519F] font-semibold">
+      <Image
+          src="/products/aroMatic+.png"
+          alt="AroMatic+"
+          height={200}
+          width={85}
+          />
+      </h2>
+        <h2 className="float-left font-semibold pt-20 text-black">
+          Everything you need to maintain a great home...<br></br>We have always been the best for giving our BEST RESULTS. <br></br>We are introducing multiple products with high performance and checmical-free and with high hygiene.<br></br>We ROYALAURORA proudly manufacturing our products in India.<br></br>
         </h2>
-        <a
+        <a  
           href="https://wa.me/+919505063030"
-          className="bg-slate-500 text-white px-2 rounded-full mx-auto"
-        >
+          className="bg-slate-500 text-white px-2 rounded-full mx-auto">
           <button>Order Now</button>
         </a>
+        </div>
       </section>
-      <div id="products" className="my-10 h-fit">
-        <p className="uppercase text-lg font-semibold flex justify-center py-2 bg-[#B8D0EA]">
+  
+      <div id="products" className="my-80 h-fit">
+        <p className="uppercase text-lg font-semibold flex justify-center py-20 bg-[#B8D0EA]">
           Products
         </p>
         <Slider {...settings} className="mx-7">
@@ -241,15 +251,35 @@ const Main: NextPage = () => {
           </div>
         </Slider>
       </section>
-      {/*<section className=" mx-2">
-        <Image
-          src={"/certificates.svg"}
-          height={40}
-          width={100}
-          layout="responsive"
-          className="w-full"
-        ></Image>
-      </section>*/}
+      <section className="bg-[#5193CF] text-white p-10 text-xl">
+        <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let's keep<br></br>in touch</div>
+          <div className="pb-8">
+            <a href="https://wa.me/+919505063030">
+              <Image
+                src="/sm/whatsapp.svg"
+                height={50}
+                width={50}/>
+            </a>
+          </div>
+          <div className="pb-8">
+            <a
+              href="https://instagram.com/royalaurora_official"
+              target={"blank"}>
+              <Image
+                src="/sm/instagram.svg"
+                height={50}
+                width={50}/>
+            </a>
+          </div>
+          <div className="pb-8">
+            <a href="https://wa.me/+919505063030">
+              <Image src="/sm/facebook.svg" height={50} width={50} />
+            </a>
+          </div>
+            <p className="text-xl">
+              Share the Product with your family and friends
+            </p>
+      </section>
     </main>
   );
 };
