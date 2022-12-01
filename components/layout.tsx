@@ -15,8 +15,8 @@ const Layout: NextPage = () => {
        href: "/",
      },
      {
-       title: "Products",
-       href: "#products",
+      title: "Products",
+      href: "/  ",
      },
     // {
     //   title: "About us",
@@ -29,16 +29,20 @@ const Layout: NextPage = () => {
    ];
 
    return (
-     <header className="p-5 flex justify-between font-Montserrat">
-       <Image src="/logoA.png" alt="1stlogo" height={50} width={110} />
+     <header className="p-5 flex justify-between font-Montserrat bg-[#5193CF]">
+       <Image src="/logo_B.png" alt="2ndlogo" height={50} width={110} />
        <nav className="md:hidden flex">
-         <img
+       <a href="https://wa.me/+919505063030"
+        target={"blank"}
+        >
+        <img
            src="/order-now.svg"
-           alt=""
+           alt="ordernow"
            height={50}
            width={50}
            className="mr-5"
          />
+        </a>
          {show ? (
            <Image
              src={"/close_big.svg"}
@@ -76,17 +80,17 @@ const Layout: NextPage = () => {
            </div>
          )}
        </nav>
-       <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex">
+       <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex bg-[#5193CF]">
          <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
            Home
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF]">
            Products
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF]">
            About Us
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF]">
            Contact us
          </a>
        </nav>
