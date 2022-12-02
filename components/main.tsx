@@ -154,7 +154,7 @@ const Main: NextPage = () => {
             </a>
           </div>
           <div className="pb-5 indent-5">
-            <a href="https://wa.me">
+            <a href="whatsapp://send?text=https://www.royalaurora.com/">
               <Image
                 src="/products/whatsapp.png" alt="whatsapp"
                 height={78}
