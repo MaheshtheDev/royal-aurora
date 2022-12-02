@@ -56,13 +56,13 @@ export default function Header() {
           )}
 
           {show && (
-            <div className="absolute top-20 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
+            <div className="absolute top-20 right-0 z-50 w-full rounded-sm bg-[#5193CF] p-5 shadow-xl">
               <div className="flex w-full flex-col items-center justify-center">
                 {navItems.map((item, index) => (
                   <a
                     key={index}
                     href={item.href}
-                    className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
+                    className="font-Montserrat w-full text-white cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
                   >
                     {item.title}
                   </a>

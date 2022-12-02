@@ -88,8 +88,8 @@ const Main: NextPage = () => {
           FOR ALL<br></br>CLEANING PRODUCTS!!
         </h2>
         </div>
-        <div className="text-white pt-20 pb-4 pl-5 text-align font-Montserrat">
-        <h2>We are introducing multiple products with high performance and chemical-free and with high hygine. We <b>ROYALAURORA</b> proudly manufacturing our products in INDIA.</h2>
+        <div className="text-white pt-20 pb-4 pl-6 text-align font-Montserrat">
+        <h2>We are introducing multiple products with <br></br>high performance and chemical-free and <br></br>with high hygiene. We <b>ROYALAURORA</b> <br></br>proudly manufacturing our products in INDIA.</h2>
         </div>
         <div className="text-center pb-6">
         <a href="https://wa.me/+919505063030">
@@ -101,7 +101,7 @@ const Main: NextPage = () => {
       <div><br></br></div>
       <section>
       <div className="indent-20 font-bold text-3xl font-Montserrat text-black">True and</div>
-      <div className="indent-32 font-bold text-3xl font-Montserrat text-[#5193CF]">Turstworthy</div>
+      <div className="indent-32 font-bold text-3xl font-Montserrat text-[#5193CF]">Trustworthy</div>
       <br></br>
       <div className="pb-8 indent-8">
         <Image src="/products/aroframe.png" alt="aroframe" height={450} width={350}></Image>
@@ -144,22 +144,22 @@ const Main: NextPage = () => {
       <div className="pb-6"></div>
       <section className="bg-[#5193CF] text-white p-10 text-xl">
         <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let&apos;s keep<br></br>in touch</div>
-          <div className="pb-8 indent-10">
+          <div className="pb-5 indent-5">
             <a href="https://wa.me/+919505063030">
               <Image
                 src="/products/whatsapp.png"
-                height={30}
-                width={30}/>
+                height={78}
+                width={78}/>
             </a>
           </div>
-          <div className="pb-8 indent-10">
+          <div className="pb-7 indent-10">
             <a
               href="https://instagram.com/royalaurora_official"
               target={"blank"}>
               <Image
                 src="/products/instagram.png"
-                height={30}
-                width={30}/>
+                height={40}
+                width={40}/>
             </a>
           </div>
             <p className="text-xl">

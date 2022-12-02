@@ -64,14 +64,14 @@ const Layout: NextPage = () => {
          )}
 
          {show && (
-           <div className="absolute top-20 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
+           <div className="absolute top-24 right-0 z-50 w-full rounded-sm bg-[#5193CF] p-5 shadow-xl">
              <div className="flex w-full flex-col items-center justify-center">
                {navItems.map((item, index) => (
                  <a
                    key={index}
                    href={item.href}
                    onClick={() => handleShow()}
-                   className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-bold hover:tracking-wide"
+                   className="font-Montserrat w-full cursor-pointer text-white rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-bold hover:tracking-wide"
                  >
                    {item.title}
                  </a>
@@ -81,16 +81,16 @@ const Layout: NextPage = () => {
          )}
        </nav>
        <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex bg-[#5193CF]">
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700 text-Montserrat">
            Home
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF]">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Products
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF]">
-           About Us
-         </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF]">
+          <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
+            About Us
+          </a>
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Contact us
          </a>
        </nav>
