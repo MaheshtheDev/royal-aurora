@@ -29,7 +29,7 @@ const Layout: NextPage = () => {
    ];
 
    return (
-     <header className="p-5 flex justify-between font-Montserrat bg-[#5193CF]">
+     <header className="sticky top-0 z-50 p-5 flex justify-between font-Montserrat bg-[#5193CF]">
        <Image src="/logo_B.png" alt="2ndlogo" height={50} width={110} />
        <nav className="md:hidden flex">
        <a href="https://wa.me/+919505063030"

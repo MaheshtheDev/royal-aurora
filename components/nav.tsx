@@ -62,7 +62,7 @@ export default function Header() {
                   <a
                     key={index}
                     href={item.href}
-                    className="font-Montserrat w-full text-white cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
+                    className="font-Montserrat w-full text- cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
                   >
                     {item.title}
                   </a>
