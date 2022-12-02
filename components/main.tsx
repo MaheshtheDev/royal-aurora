@@ -63,39 +63,40 @@ const Main: NextPage = () => {
   return (
     <main>
       <section className="flex flex-col justify-between">
-      <div className="w-full h-400 bg-[#5193CF]">
+      <div className="w-full h-400 bg-white">
       <h2 className="flex text-xl text-[#22519F] font-semibold">
-      <Image
-          src="/products/homeframe.png"
-          alt="AroMatic+"
-          height={300}
-          width={420}
-      />
       </h2>
-      <h2 className="">
-      <img
-          src="/products/aroMatic+.png"
-          alt="AroMatic+"
-          height={180}
-          width={80}
-          className="cursor-pointer absolute top-60 left-16 hover:shadow:outline"></img>
-        </h2>
-        <div className="pb-2 py-2">
-        <h2 className="float-right pr-9 font-bold text-white text-align font-Montserrat">
+      <section className="h-fit">
+        <div className="pb-2"></div>
+        <div className="pb-8">
+        <Slider {...whatSettings} className="mx-7">
+          <div className="flex flex-col justify-center">
+             <Image src="/products/homeframe.png" alt="homeframe" height={400} width={500}></Image>
+          </div>
+          <div className="flex flex-col justify-center">
+              <Image src="/products/16.png" alt="16" height={400} width={500}></Image>
+          </div>
+        </Slider>
+        </div>
+      </section>
+      <section className="bg-[#5193CF]">
+        <div className="py-6">
+        <h2 className="pl-4 font-bold text-white text-align font-Montserrat">
           ONE STOP DESTINATION
         </h2>
-        <h2 className="float-right pr-12 font-bold text-black text-align font-Montserrat">
-          FOR ALL<br></br>CLEANING PRODUCTS!!
+        <h2 className="pl-16 font-bold text-white text-align font-Montserrat">
+          FOR ALL CLEANING PRODUCTS!!
         </h2>
         </div>
-        <div className="text-white pt-20 pb-4 pl-6 text-align font-Montserrat">
+        <div className="pb-2 pl-6 text-align font-Montserrat">
         <h2>We are introducing multiple products with <br></br>high performance and chemical-free and <br></br>with high hygiene. We <b>ROYALAURORA</b> <br></br>proudly manufacturing our products in INDIA.</h2>
         </div>
-        <div className="text-center pb-6">
+        <div className="text-center pb-6 py-2">
         <a href="https://wa.me/+919505063030">
           <button className="bg-white text-2xl font-semibold font-Monsterrat text-[#5193CF] px-4 rounded-md">Order Now</button>
         </a>
         </div>
+      </section>
         </div>
       </section>
       <div><br></br></div>
@@ -104,12 +105,12 @@ const Main: NextPage = () => {
       <div className="indent-32 font-bold text-3xl font-Montserrat text-[#5193CF]">Trustworthy</div>
       <br></br>
       <div className="pb-8 indent-8">
-        <Image src="/products/aroframe.png" alt="aroframe" height={450} width={350}></Image>
+        <Image src="/products/aroframe.png" alt="aroframe" height={400} width={350}></Image>
       </div>
       <div className="indent-8">
-        <Image src="/products/cibiframe1.png" alt="cibiframe" height={450} width={350}></Image>
+        <Image src="/products/cibiframe1.png" alt="cibiframe" height={400} width={350}></Image>
       </div>
-        <div className="p-10 indent-16">
+        <div className="p-8 indent-20">
           <button className="h-10 px-2 text-lg font-bold rounded-md bg-[#5193CF] text-white" type="button"
             onClick={() => window.open("#products")}>Discover Our Products
           </button>
@@ -144,10 +145,18 @@ const Main: NextPage = () => {
       <div className="pb-6"></div>
       <section className="bg-[#5193CF] text-white p-10 text-xl">
         <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let&apos;s keep<br></br>in touch</div>
-          <div className="pb-5 indent-5">
-            <a href="https://wa.me/+919505063030">
+        <div className="indent-3">
+            <a href="tel:+91-9505063030">
               <Image
-                src="/products/whatsapp.png"
+                src="/products/call.png" alt="call"
+                height={90}
+                width={90}/>
+            </a>
+          </div>
+          <div className="pb-5 indent-5">
+            <a href="https://wa.me">
+              <Image
+                src="/products/whatsapp.png" alt="whatsapp"
                 height={78}
                 width={78}/>
             </a>
@@ -157,7 +166,7 @@ const Main: NextPage = () => {
               href="https://instagram.com/royalaurora_official"
               target={"blank"}>
               <Image
-                src="/products/instagram.png"
+                src="/products/instagram.png" alt="instagram"
                 height={40}
                 width={40}/>
             </a>

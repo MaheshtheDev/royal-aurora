@@ -29,17 +29,17 @@ const Layout: NextPage = () => {
    ];
 
    return (
-     <header className="sticky top-0 z-50 p-5 flex justify-between font-Montserrat bg-[#5193CF]">
-       <Image src="/logo_B.png" alt="2ndlogo" height={50} width={110} />
+     <header className="sticky top-0 z-50 p-5 flex justify-between font-Montserrat bg-white">
+       <Image src="/logoA.png" alt="2ndlogo" height={50} width={110} />
        <nav className="md:hidden flex">
        <a href="https://wa.me/+919505063030"
         target={"blank"}
         >
-        <img
-           src="/order-now.svg"
+        <Image
+           src="/products/ordernow1.jpg"
            alt="ordernow"
-           height={50}
-           width={50}
+           height={80}
+           width={80}
            className="mr-5"
          />
         </a>
@@ -64,14 +64,14 @@ const Layout: NextPage = () => {
          )}
 
          {show && (
-           <div className="absolute top-24 right-0 z-50 w-full rounded-sm bg-[#5193CF] p-5 shadow-xl">
+           <div className="absolute top-24 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
              <div className="flex w-full flex-col items-center justify-center">
                {navItems.map((item, index) => (
                  <a
                    key={index}
                    href={item.href}
                    onClick={() => handleShow()}
-                   className="font-Montserrat w-full cursor-pointer text-white rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-bold hover:tracking-wide"
+                   className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-bold hover:tracking-wide"
                  >
                    {item.title}
                  </a>

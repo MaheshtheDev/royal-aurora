@@ -4,7 +4,7 @@ export default function ProductCard(props: { productDetails: Product }) {
   return (
     <div className="flex flex-row border-2 border-[#D1D6EC] rounded-lg">
       <div className="text-center p-5">
-        <img src="/logo.jpeg" height={75} width={150} className="" />
+        <img src="/logo.jpeg" alt="logo" height={75} width={150} className=""/>
       </div>
       <div className="bg-[#B9D0EB] relative w-fit pl-2 pr-4 py-2">
         <h3 className="uppercase font-semibold text-primary">
