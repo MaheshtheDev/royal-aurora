@@ -56,13 +56,13 @@ export default function Header() {
           )}
 
           {show && (
-            <div className="absolute top-20 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
+            <div className="absolute top-40 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
               <div className="flex w-full flex-col items-center justify-center">
                 {navItems.map((item, index) => (
                   <a
                     key={index}
                     href={item.href}
-                    className="font-Montserrat w-full text- cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
+                    className="font-Montserrat w-full text- cursor-pointer rounded-md p-4 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
                   >
                     {item.title}
                   </a>
@@ -72,16 +72,16 @@ export default function Header() {
           )}
         </nav>
         <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex">
-          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             Home
           </a>
-          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             Products
           </a>
-          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             About Us
           </a>
-          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             Contact us
           </a>
         </nav>

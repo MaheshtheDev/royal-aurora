@@ -64,7 +64,7 @@ const Layout: NextPage = () => {
          )}
 
          {show && (
-           <div className="absolute top-24 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
+           <div className="absolute top-28 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
              <div className="flex w-full flex-col items-center justify-center">
                {navItems.map((item, index) => (
                  <a

@@ -108,7 +108,7 @@ const Main: NextPage = () => {
         <Image src="/products/aroframe.png" alt="aroframe" height={400} width={350}></Image>
       </div>
       <div className="indent-8">
-        <Image src="/products/cibiframe1.png" alt="cibiframe" height={400} width={350}></Image>
+        <Image src="/products/cibiframe.png" alt="cibiframe" height={400} width={350}></Image>
       </div>
         <div className="p-8 indent-20">
           <button className="h-10 px-2 text-lg font-bold rounded-md bg-[#5193CF] text-white" type="button"
