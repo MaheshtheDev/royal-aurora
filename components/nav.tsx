@@ -19,10 +19,6 @@ export default function Header() {
       href: "#products",
     },
     {
-      title: "About us",
-      href: "#",
-    },
-    {
       title: "Contact us",
       href: "#footer",
     },
@@ -71,15 +67,12 @@ export default function Header() {
             </div>
           )}
         </nav>
-        <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex">
+        <nav className="hidden list-none justify-center text-center font-medium uppercase md-flex">
           <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             Home
           </a>
           <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             Products
-          </a>
-          <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
-            About Us
           </a>
           <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-[#5193CF]">
             Contact us

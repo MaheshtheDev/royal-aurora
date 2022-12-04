@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import Slider from "react-slick";
 
@@ -36,6 +37,8 @@ function SamplePrevArrow(props: any) {
 }
 
 const Main: NextPage = () => {
+  const router = useRouter();
+  
   var settings = {
     dots: true,
     infinite: true,
@@ -69,7 +72,7 @@ const Main: NextPage = () => {
       <section className="h-fit">
         <div className="pb-2"></div>
         <div className="pb-8">
-        <Slider {...whatSettings} className="mx-7">
+        <Slider {...whatSettings} className="mx-7 text-center">
           <div className="flex flex-col justify-center">
              <Image src="/products/homeframe.png" alt="homeframe" height={400} width={500}></Image>
           </div>
@@ -79,17 +82,17 @@ const Main: NextPage = () => {
         </Slider>
         </div>
       </section>
-      <section className="bg-[#5193CF]">
-        <div className="py-6">
-        <h2 className="pl-4 font-bold text-white text-align font-Montserrat">
+      <section className="bg-[#5193CF] text-center">
+        <div className="py-6 text-center">
+        <h2 className="font-bold text-white font-Montserrat">
           ONE STOP DESTINATION
         </h2>
-        <h2 className="pl-16 font-bold text-white text-align font-Montserrat">
+        <h2 className="font-bold text-white font-Montserrat">
           FOR ALL CLEANING PRODUCTS!!
         </h2>
         </div>
-        <div className="pb-2 pl-6 text-align font-Montserrat">
-        <h2>We are introducing multiple products with <br></br>high performance and chemical-free and <br></br>with high hygiene. We <b>ROYALAURORA</b> <br></br>proudly manufacturing our products in INDIA.</h2>
+        <div className="pb-1 pl-4 px-6 font-semibold font-Montserrat text-justify text-black">
+        <h2>We are introducing multiple products with high performance and chemical-free and with high hygiene. We <b>ROYALAURORA</b> proudly manufacturing our products in INDIA.</h2>
         </div>
         <div className="text-center pb-6 py-2">
         <a href="https://wa.me/+919505063030">
@@ -100,23 +103,23 @@ const Main: NextPage = () => {
         </div>
       </section>
       <div><br></br></div>
-      <section>
-      <div className="indent-20 font-bold text-3xl font-Montserrat text-black">True and</div>
-      <div className="indent-32 font-bold text-3xl font-Montserrat text-[#5193CF]">Trustworthy</div>
+      <section className="text-center">
+      <div className="font-bold text-3xl font-Montserrat text-black">True and</div>
+      <div className="indent-28 font-bold text-3xl font-Montserrat text-[#5193CF]">Trustworthy</div>
       <br></br>
-      <div className="pb-8 indent-8">
+      <div className="pb-8">
         <Image src="/products/aroframe.png" alt="aroframe" height={400} width={350}></Image>
       </div>
-      <div className="indent-8">
+      <div className="">
         <Image src="/products/cibiframe.png" alt="cibiframe" height={400} width={350}></Image>
       </div>
-        <div className="p-8 indent-20">
+        <div className="p-8">
           <button className="h-10 px-2 text-lg font-bold rounded-md bg-[#5193CF] text-white" type="button"
-            onClick={() => window.open("#products")}>Discover Our Products
+            onClick={() => router.push("/productspage")}>Discover Our Products
           </button>
         </div>
       </section>
-      <section className="p-4 h-fit">
+      <section className="p-4">
         <h2 className="uppercase font-semibold text-xl font-Montserrat text-[#5193CF]">
           For what application you are looking for the product??
         </h2>
@@ -137,15 +140,15 @@ const Main: NextPage = () => {
         </Slider>
       </section>
       <div className="pb-10"></div>
-      <div className="indent-32">
+      <div className="text-center">
       <button className="h-10 px-6 mr-2 mb-2 text-lg font-bold rounded-md bg-[#5193CF] text-white" type="button"
         onClick={() => window.open("#products")}>Discover More
       </button>
       </div>
       <div className="pb-6"></div>
-      <section className="bg-[#5193CF] text-white p-10 text-xl">
+      <section className="bg-[#5193CF] text-white p-10 text-xl text-center">
         <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let&apos;s keep<br></br>in touch</div>
-        <div className="indent-3">
+        <div className="">
             <a href="tel:+91-9505063030">
               <Image
                 src="/products/call.png" alt="call"
@@ -153,7 +156,7 @@ const Main: NextPage = () => {
                 width={90}/>
             </a>
           </div>
-          <div className="pb-5 indent-5">
+          <div className="pb-5">
             <a href="whatsapp://send?text=https://www.royalaurora.com/">
               <Image
                 src="/products/whatsapp.png" alt="whatsapp"
@@ -161,7 +164,7 @@ const Main: NextPage = () => {
                 width={78}/>
             </a>
           </div>
-          <div className="pb-7 indent-10">
+          <div className="pb-7">
             <a
               href="https://instagram.com/royalaurora_official"
               target={"blank"}>

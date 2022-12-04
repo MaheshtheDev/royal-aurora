@@ -1,8 +1,11 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
-
-const Layout: NextPage = () => {
+import Footer from "./footer";
+interface LayoutProps {
+  children: React.ReactNode;
+}
+export default function Layout({children } : LayoutProps) {
    const [show, setShow] = useState(false);
 
    const handleShow = () => {
@@ -18,10 +21,6 @@ const Layout: NextPage = () => {
       title: "Products",
       href: "/  ",
      },
-    // {
-    //   title: "About us",
-    //   href: "#",
-    // },
      {
        title: "Contact us",
        href: "#footer",
@@ -29,8 +28,9 @@ const Layout: NextPage = () => {
    ];
 
    return (
+    <>
      <header className="sticky top-0 z-50 p-5 flex justify-between font-Montserrat bg-white">
-       <Image src="/logoA.png" alt="2ndlogo" height={50} width={110} />
+       <Image src="/logoA.png" alt="2ndlogo" height={50} width={115} />
        <nav className="md:hidden flex">
        <a href="https://wa.me/+919505063030"
         target={"blank"}
@@ -38,10 +38,10 @@ const Layout: NextPage = () => {
         <Image
            src="/products/ordernow1.jpg"
            alt="ordernow"
-           height={80}
-           width={80}
-           className="mr-5"
-         />
+           height={70}
+           width={100}
+           className= "pr-2"       
+        />
         </a>
          {show ? (
            <Image
@@ -80,22 +80,20 @@ const Layout: NextPage = () => {
            </div>
          )}
        </nav>
-       <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex bg-[#5193CF]">
-         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-blue-700 text-Montserrat">
+       <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Home
          </a>
          <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Products
          </a>
-          <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
-            About Us
-          </a>
          <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Contact us
          </a>
        </nav>
      </header>
+     <main>{children}</main>
+     <Footer></Footer>
+     </>
    );
 }
-
-export default Layout
