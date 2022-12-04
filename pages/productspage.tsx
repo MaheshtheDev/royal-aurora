@@ -106,7 +106,7 @@ const Productspage: NextPage = () => {
         <Image src="/products/CIBI.png" alt="cibi" height={300} width={180}></Image>
       </div>
       <div className="text-center font-bold text-3xl font-Montserrat text-[#5193CF]">Cibi</div>
-      <div className="pb-2 pl-6 py-2 px-6 font-semibold font-Montserrat text-justify text-black">Cibi is a copper, brass & metal cleaner. It gives your metal long-lassting shine & protection. It's formulation is ideal to remove tarnish and restore natural color & shine. It is very safe for hand & skin.</div>
+      <div className="pb-2 pl-6 py-2 px-6 font-semibold font-Montserrat text-justify text-black">Cibi is a copper, brass & metal cleaner. It gives your metal long-lassting shine & protection. It&apos;s formulation is ideal to remove tarnish and restore natural color & shine. It is very safe for hand & skin.</div>
       <div className="p-4 text-center">
           <button className="h-10 px-4 text-lg font-semibold rounded-md bg-[#5193CF] text-white" type="button"
             onClick={() => window.open("#products")}>Explore More
