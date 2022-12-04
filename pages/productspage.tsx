@@ -95,7 +95,7 @@ const Productspage: NextPage = () => {
         <Image src="/products/aroMatic+.png" alt="aro" height={320} width={150}></Image>
       </div>
       <div className="text-center font-bold text-2xl font-Montserrat text-[#5193CF]">AroMatic+</div>
-      <div className="pb-2 pl-6 px-6 py-2 font-semibold font-Montserrat text-justify text-black">AroMatic+ is 10x concentrated when compared to Normal detergent liquid. It works in all washing machines & cleans effectively iin all temperatures. The added fabric conditioner gives you long lasting fragrance. It is very gentle on skin and hands.</div>
+      <div className="pb-2 pl-6 px-6 py-2 font-semibold font-Montserrat text-justify text-black">AroMatic+ is 10x concentrated when compared to normal detergent liquid. It works in all washing machines & cleans effectively in all temperatures. The added fabric conditioner gives you long lasting fragrance. It is very gentle on skin and hands.</div>
       <div className="p-4 text-center">
           <button className="h-10 px-4 text-lg font-semibold rounded-md bg-[#5193CF] text-white" type="button"
             onClick={() => window.open("#products")}>Explore More
@@ -106,7 +106,7 @@ const Productspage: NextPage = () => {
         <Image src="/products/CIBI.png" alt="cibi" height={300} width={180}></Image>
       </div>
       <div className="text-center font-bold text-3xl font-Montserrat text-[#5193CF]">Cibi</div>
-      <div className="pb-2 pl-6 py-2 px-6 font-semibold font-Montserrat text-justify text-black">Cibi is a copper, brass & metal cleaner. It gives your metal long-lassting shine & protection. It&apos;s formulation is ideal to remove tarnish and restore natural color & shine. It is very safe for hand & skin.</div>
+      <div className="pb-2 pl-6 py-2 px-6 font-semibold font-Montserrat text-justify text-black">Cibi is a copper, brass & metal cleaner. It gives your metal long-lasting shine & protection. It&apos;s formulation is ideal to remove tarnish and restore natural color & shine. It is very safe for hand & skin.</div>
       <div className="p-4 text-center">
           <button className="h-10 px-4 text-lg font-semibold rounded-md bg-[#5193CF] text-white" type="button"
             onClick={() => window.open("#products")}>Explore More
