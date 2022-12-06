@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Footer from '../components/footer'
 import Layout from '../components/layout'
 import Main from '../components/main'
+//import Productspage from '../components/productspage'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
       />
       <link
-        rel="stylesheet"
+        rel="stylesheet"  
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
@@ -30,9 +31,9 @@ const Home: NextPage = () => {
           content="https://www.royalaurora.com/OG-Image.png"
         />
       </Head>
-      <Layout />
       <Main />
-      <Footer />
+      {/*<Productspage />*/}
+      {/*<Footer />*/}
     </div>
   );
 }

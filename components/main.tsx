@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import Slider from "react-slick";
 
@@ -36,6 +37,8 @@ function SamplePrevArrow(props: any) {
 }
 
 const Main: NextPage = () => {
+  const router = useRouter();
+  
   var settings = {
     dots: true,
     infinite: true,
@@ -61,195 +64,121 @@ const Main: NextPage = () => {
   };
 
   return (
-    <main className="font-Montserrat mb-auto">
-      <section className="flex flex-col justify-between h-32">
-        <h2 className="text-center uppercase font-semibold pt-5">
-          Everything you need to maintain <br></br> a great home..
-        </h2>
-        <a
-          href="https://wa.me/+919505063030"
-          className="bg-slate-500 text-white px-2 rounded-full mx-auto"
-        >
-          <button>Order Now</button>
-        </a>
-      </section>
-      <div id="products" className="my-10 h-fit">
-        <p className="uppercase text-lg font-semibold flex justify-center py-2 bg-[#B8D0EA]">
-          Products
-        </p>
-        <Slider {...settings} className="mx-7">
-          <section className="">
-            <h2 className="flex justify-center text-xl py-2 text-[#22519F] font-semibold">
-              <Image
-                src="/products/logo.png"
-                alt="AroMatic+"
-                height={60}
-                width={80}
-              />
-            </h2>
-            <div className="bg-[#73A2D6]/50 px-3 py-2">
-              <div className="flex py-2">
-                <div className="image-column">
-                  <Image
-                    src="/products/aroMatic+.png"
-                    alt="AroMatic+"
-                    height={300}
-                    width={120}
-                  />
-                </div>
-                <div className="pl-5 flex flex-col justify-between">
-                  <p className="text-xs">
-                    ARO MATIC+ is a product with 10x concentration & with added
-                    fabric conditioner.
-                  </p>
-                  <div className="flex-auto flex flex-wrap py-4 text-sm">
-                    <button
-                      className="h-8 px-2 mr-2 mb-2 font-medium rounded-md bg-[#283562] text-white"
-                      type="button"
-                      onClick={() => window.open("https://wa.me/+919505063030")}
-                    >
-                      Order Now
-                    </button>
-                    <button
-                      className="h-8 px-2 font-medium rounded-md border border-[#283562] text-[#283562]"
-                      type="button"
-                    >
-                      View Product
-                    </button>
-                  </div>
-                  <div className="">
-                    <div className="w-16 pt-1 flex justify-between">
-                      <a href="https://wa.me/+919505063030">
-                        <Image
-                          src="/sm/whatsapp.svg"
-                          height={15}
-                          width={15}
-                          className="py-1"
-                        />
-                      </a>
-                      <a
-                        href="https://instagram.com/royalaurora_official"
-                        target={"blank"}
-                      >
-                        <Image
-                          src="/sm/instagram.svg"
-                          height={15}
-                          width={15}
-                          className="py-1"
-                        />
-                      </a>
-                      <a href="https://wa.me/+919505063030">
-                        <Image src="/sm/facebook.svg" height={15} width={15} />
-                      </a>
-                    </div>
-                    <p className="text-xs text-[#000000]/40">
-                      Share the Product with your family and friends
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="">
-            <h2 className="flex justify-center text-xl py-2 text-[#22519F] font-semibold">
-              <Image
-                src="/products/cibi-logo.png"
-                alt="AroMatic+"
-                height={60}
-                width={130}
-              />
-            </h2>
-            <div className="bg-[#FCCEE2]/50 px-3 py-2">
-              <div className="flex py-2">
-                <div className="image-column">
-                  <Image
-                    src="/products/CIBI.png"
-                    alt="Cibi"
-                    height={320}
-                    width={175}
-                  />
-                </div>
-                <div className="pl-5 flex flex-col justify-between">
-                  <p className="text-xs">
-                    Cibi Product is a Copper &amp; Brass metal cleaner with 10x
-                    more cleaning power.
-                  </p>
-                  <div className="flex-auto flex py-4 flex-wrap text-sm">
-                    <button
-                      className="h-8 w-fit px-2 mr-2 mb-2 font-medium rounded-md bg-[#50000D]/80 text-white"
-                      type="button"
-                      onClick={() => window.open("https://wa.me/+919505063030")}
-                    >
-                      Order Now
-                    </button>
-                    <button
-                      className="h-8 w-fit px-2 font-medium rounded-md border border-[#50000D]/80 text-[#50000D]/80"
-                      type="button"
-                    >
-                      View Product
-                    </button>
-                  </div>
-                  <div className="">
-                    <div className="w-16 flex justify-between">
-                      <a href="https://wa.me/+919505063030">
-                        <Image
-                          src="/sm/whatsapp.svg"
-                          height={15}
-                          width={15}
-                          className="py-1"
-                        />
-                      </a>
-                      <a
-                        href="https://instagram.com/royalaurora_official"
-                        target={"blank"}
-                      >
-                        <Image
-                          src="/sm/instagram.svg"
-                          height={15}
-                          width={15}
-                          className="py-1"
-                        />
-                      </a>
-                      <a href="https://wa.me/+919505063030">
-                        <Image src="/sm/facebook.svg" height={15} width={15} />
-                      </a>
-                    </div>
-                    <p className="text-xs text-[#000000]/40">
-                      Share the Product with your family and friends
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+    <main>
+      <section className="flex flex-col justify-between">
+      <div className="w-full h-400 bg-white">
+      <h2 className="flex text-xl text-[#22519F] font-semibold">
+      </h2>
+      <section className="h-fit">
+        <div className="pb-2"></div>
+        <div className="pb-8">
+        <Slider {...whatSettings} className="mx-7 text-center">
+          <div className="flex flex-col justify-center">
+             <Image src="/products/homeframe.png" alt="homeframe" height={400} width={500}></Image>
+          </div>
+          <div className="flex flex-col justify-center">
+              <Image src="/products/16.png" alt="16" height={400} width={500}></Image>
+          </div>
         </Slider>
-        <div className="snap-x flex overflow-x-auto snap-start"></div>
-        <div className="flex flex-grow justify-around"></div>
+        </div>
+      </section>
+      <section className="bg-[#5193CF] text-center">
+        <div className="py-6 text-center">
+        <h2 className="font-bold text-white font-Montserrat">
+          ONE STOP DESTINATION
+        </h2>
+        <h2 className="font-bold text-white font-Montserrat">
+          FOR ALL CLEANING PRODUCTS!!
+        </h2>
+        </div>
+        <div className="pb-1 pl-4 px-6 font-semibold font-Montserrat text-justify text-black">
+        <h2>We are introducing multiple products with high performance and chemical-free and with high hygiene. We <b>ROYALAURORA</b> proudly manufacturing our products in INDIA.</h2>
+        </div>
+        <div className="text-center pb-6 py-2">
+        <a href="https://wa.me/+919505063030">
+          <button className="bg-white text-2xl font-semibold font-Monsterrat text-[#5193CF] px-4 rounded-md">Order Now</button>
+        </a>
+        </div>
+      </section>
+        </div>
+      </section>
+      <div><br></br></div>
+      <section className="text-center">
+      <div className="font-bold text-3xl font-Montserrat text-black">True and</div>
+      <div className="indent-28 font-bold text-3xl font-Montserrat text-[#5193CF]">Trustworthy</div>
+      <br></br>
+      <div className="pb-8">
+        <Image src="/products/aroframe.png" alt="aroframe" height={400} width={350}></Image>
       </div>
-      <section className="p-2 h-fit">
-        <h2 className="uppercase font-semibold">
+      <div className="">
+        <Image src="/products/cibiframe.png" alt="cibiframe" height={400} width={350}></Image>
+      </div>
+        <div className="p-8">
+          <button className="h-10 px-2 text-lg font-bold rounded-md bg-[#5193CF] text-white" type="button"
+            onClick={() => router.push("/productspage")}>Discover Our Products
+          </button>
+        </div>
+      </section>
+      <section className="p-4">
+        <h2 className="uppercase font-semibold text-xl font-Montserrat text-[#5193CF]">
           For what application you are looking for the product??
         </h2>
+        <div className="pb-8"></div>
         <Slider {...whatSettings} className="mx-7">
           <div className="flex flex-col justify-center text-center">
-            <Image src="/products/Laundry.svg" height={190} width={200}></Image>
+            <a href="#products">
+             <Image src="/products/Laundry.svg" alt="laundry" height={250} width={260}></Image>
+            </a>
             <p className="text-lg font-medium">Laundry</p>
           </div>
           <div className="flex flex-col justify-center text-center py-3">
-            <Image src="/products/image.png" height={190} width={200}></Image>
+            <a href="#products">
+              <Image src="/products/image.png" alt="image" height={250} width={260}></Image>
+            </a>
             <p className="text-lg font-medium">Brass, Copper Vessels</p>
           </div>
         </Slider>
       </section>
-      {/*<section className=" mx-2">
-        <Image
-          src={"/certificates.svg"}
-          height={40}
-          width={100}
-          layout="responsive"
-          className="w-full"
-        ></Image>
-      </section>*/}
+      <div className="pb-10"></div>
+      <div className="text-center">
+      <button className="h-10 px-6 mr-2 mb-2 text-lg font-bold rounded-md bg-[#5193CF] text-white" type="button"
+        onClick={() => window.open("#products")}>Discover More
+      </button>
+      </div>
+      <div className="pb-6"></div>
+      <section className="bg-[#5193CF] text-white p-10 text-xl text-center">
+        <div className="flex flex-col space-y-30 font-bold pb-8 text-4xl"> let&apos;s keep<br></br>in touch</div>
+        <div className="">
+            <a href="tel:+91-9505063030">
+              <Image
+                src="/products/call.png" alt="call"
+                height={90}
+                width={90}/>
+            </a>
+          </div>
+          <div className="pb-5">
+            <a href="whatsapp://send?text=https://www.royalaurora.com/">
+              <Image
+                src="/products/whatsapp.png" alt="whatsapp"
+                height={78}
+                width={78}/>
+            </a>
+          </div>
+          <div className="pb-7">
+            <a
+              href="https://instagram.com/royalaurora_official"
+              target={"blank"}>
+              <Image
+                src="/products/instagram.png" alt="instagram"
+                height={40}
+                width={40}/>
+            </a>
+          </div>
+            <p className="text-xl">
+              Share the Product with your family and friends
+            </p>
+      </section>
+    <div className="pb-8"></div>
     </main>
   );
 };

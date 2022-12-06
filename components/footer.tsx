@@ -4,17 +4,15 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="h-fit flex bg-[#D1D6EC] mt-4 p-2 font-Montserrat justify-between"
-    >
-      <div className="p-2">
-        <Image src="/logoA.png" height={75} width={125} />
+      className="bg-[#5193CF] mt-4 p-8 text-white font-Montserrat justify-between text-center">
+      <div className="p-5 pb-8">
+        <Image src="/logo_B.png" alt="secondlogo" height={85} width={125}/>
       </div>
-      <div className="pr-2">
-        <div className="text-primary font-semibold pb-2">Contact us</div>
-        <div className="font-medium text-xs">Ph: +91-9505063030</div>
-        <div className="font-medium pb-4 text-xs">
-          Mail to: info@royalaurora.com
-        </div>
+      <div className="">
+        <div className="flex flex-col space-y-4 font-semibold font-Montserrat pb-8 text-xl"><a href="#">All Products</a></div>
+        <div className="flex flex-col space-y-4 pb-4 text-s">FAQs</div>
+        <div className="flex flex-col space-y-4 pb-4 text-s"><a href="#footer">Contact Us</a></div>
+        <div className="flex flex-col space-y-4 pb-8 text-s">Our Promise</div>
       </div>
     </footer>
   );

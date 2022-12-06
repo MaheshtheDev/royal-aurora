@@ -1,8 +1,11 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
-
-const Layout: NextPage = () => {
+import Footer from "./footer";
+interface LayoutProps {
+  children: React.ReactNode;
+}
+export default function Layout({children } : LayoutProps) {
    const [show, setShow] = useState(false);
 
    const handleShow = () => {
@@ -15,13 +18,9 @@ const Layout: NextPage = () => {
        href: "/",
      },
      {
-       title: "Products",
-       href: "#products",
+      title: "Products",
+      href: "/  ",
      },
-    // {
-    //   title: "About us",
-    //   href: "#",
-    // },
      {
        title: "Contact us",
        href: "#footer",
@@ -29,16 +28,21 @@ const Layout: NextPage = () => {
    ];
 
    return (
-     <header className="p-5 flex justify-between font-Montserrat">
-       <Image src="/logoA.png" height={50} width={110} />
+    <>
+     <header className="sticky top-0 z-50 p-5 flex justify-between font-Montserrat bg-white">
+       <Image src="/logoA.png" alt="2ndlogo" height={50} width={115} />
        <nav className="md:hidden flex">
-         <img
-           src="/order-now.svg"
-           alt=""
-           height={50}
-           width={50}
-           className="mr-5"
-         />
+       <a href="https://wa.me/+919505063030"
+        target={"blank"}
+        >
+        <Image
+           src="/products/ordernow1.jpg"
+           alt="ordernow"
+           height={70}
+           width={100}
+           className= "pr-2"       
+        />
+        </a>
          {show ? (
            <Image
              src={"/close_big.svg"}
@@ -60,14 +64,14 @@ const Layout: NextPage = () => {
          )}
 
          {show && (
-           <div className="absolute top-20 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
+           <div className="absolute top-28 right-0 z-50 w-full rounded-sm bg-white p-5 shadow-xl">
              <div className="flex w-full flex-col items-center justify-center">
                {navItems.map((item, index) => (
                  <a
                    key={index}
                    href={item.href}
                    onClick={() => handleShow()}
-                   className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-semibold hover:tracking-wide"
+                   className="font-Montserrat w-full cursor-pointer rounded-md p-2 text-lg font-medium hover:bg-[#8FBFEF] hover:font-bold hover:tracking-wide"
                  >
                    {item.title}
                  </a>
@@ -77,21 +81,19 @@ const Layout: NextPage = () => {
          )}
        </nav>
        <nav className="hidden list-none justify-center text-center font-medium uppercase md:flex">
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Home
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Products
          </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
-           About Us
-         </a>
-         <a className="m-auto cursor-pointer px-2 hover:font-semibold hover:text-blue-700">
+         <a className="m-auto cursor-pointer px-2 hover:font-bold hover:text-[#5193CF] text-Montserrat">
            Contact us
          </a>
        </nav>
      </header>
+     <main>{children}</main>
+     <Footer></Footer>
+     </>
    );
 }
-
-export default Layout
